@@ -1,20 +1,17 @@
-// App.js
-
-import React from 'react';
-i
+import React, { useState } from 'react';
 import MyQuote from './assets/quote';
 
+const App = () => {
 
-function App() {
-  const quotesId = 1;
+
   return (
-    <div className="">
-     
-      <MyQuote
-      quotesId={quotesId} /> 
-    
+    <div>
+      
+      <MyQuote />
     </div>
+    
   );
-}
+};
+
 
 export default App;

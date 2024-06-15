@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from "react";
-import './quote.css'
+import '../css/quote.css'
 import axios from "axios";
 const MyQuote = ({quotesId}) => {
     const [text, setText] = useState('')
@@ -58,8 +58,9 @@ return(
                 <h1>Quoute of the day</h1>
                 <div className="">
                 {error && <div className="error">{error}</div>}
-                    <p className="quotes">"{quotes}"</p>
-                    <p className="author">~{quoteAuthor}</p>
+                    <p className="quotes">{quotes}</p>
+                    
+                    <p className="author">{quoteAuthor}</p>
                 </div>
                 <div class="button-container">
   <div class="button-left">

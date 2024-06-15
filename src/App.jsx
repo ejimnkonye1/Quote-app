@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MyQuote from './assets/quote';
+import MyQuote from "./components/quote";
 
 const App = () => {
 

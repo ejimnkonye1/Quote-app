@@ -27,7 +27,7 @@ const copyToClipboard = () => {
     alert("copied")
   };
 const fectchQuote = async ()  => {
-    axios.get(`http://localhost:8000/get_quote`)
+    axios.get(`https://quote-api-ihpt.onrender.com//get_quote`)
         .then(response =>{
             setQuotes(response.data.quote);
             setQuoteAuthor(response.data.quote_author);

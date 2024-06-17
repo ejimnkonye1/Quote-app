@@ -55,12 +55,23 @@ return(
     <div className="app">
         <div className="big-border">
             <div>
-                <h1>Quoute of the day</h1>
+                <h1 className="quote-head">Quote Of The Day</h1>
                 <div className="">
                 {error && <div className="error">{error}</div>}
-                    <p className="quotes">{quotes}</p>
-                    
+               
+                {quotes &&
+  <p className="quotes">{quotes}</p>
+}
+{!quotes &&
+  <p className="quotes">"To succeed you must work!"</p>
+}
+                    {quoteAuthor && 
                     <p className="author">{quoteAuthor}</p>
+                    }
+                    {!quoteAuthor &&
+                    <p className="author"> ~Elon musk</p>
+                    }
+                    
                 </div>
                 <div class="button-container">
   <div class="button-left">
